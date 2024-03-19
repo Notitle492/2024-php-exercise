@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>計算結果</h1>
-    <? 
+    <?php
     $h = $_GET["height"];
     $w = $_GET["weight"];
     
