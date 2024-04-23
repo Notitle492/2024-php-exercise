@@ -17,6 +17,8 @@
 <?php
 
 // 設定主機、資料庫名稱、權限帳密
+if(isset($_GET["key"])){
+
 $hostname = 'localhost';
 $database = 'school';
 $dbuser = 'root';
@@ -54,6 +56,10 @@ try {
 }
 
 $conn = null;
+}else{
+    header('Location: booklist.php');
+    exit;
+}
 ?>
         
     </div>
