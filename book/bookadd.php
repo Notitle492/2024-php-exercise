@@ -1,14 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
-    <title>Book Add</title>
-</head>
-<body>
 <?php
     if(isset($_POST["submit"])){
         $bookname  = htmlentities($_POST["bookname"]);
@@ -50,6 +39,18 @@
     }
 
 ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <title>Book Add</title>
+</head>
+<body>
+
     <div class="container">
         <h1 class="text-center">Book Add</h1>
 
@@ -92,10 +93,8 @@
             <div class="mb-3"><input type="submit" class="form-control" name= "submit" value="確認新增"></div>
 
         </form>
-
-
-
-
     </div>
+    <hr>
+    <p class="text-center">1111211031 黃修貞 &copy; 2024 DCAM</p>
 </body>
 </html>

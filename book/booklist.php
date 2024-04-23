@@ -13,6 +13,8 @@
 
     <div class="container">
         <h1 class="text-center">Book List</h1>
+
+
 <?php
 
 // 設定主機、資料庫名稱、權限帳密
@@ -35,8 +37,10 @@ try {
 
     $rows = $stmt->fetchAll();
 
+
+    // 以表格形式呈現資料
     echo "<table class = 'table table-hover table-striped'>";
-    echo "<tr><td>書名</td> <td>作者</td> <td>出版日期</td> <td>定價</td> <td>function</td> </tr>";
+    echo '<tr><td>書名</td> <td>作者</td> <td>出版日期</td> <td>定價</td> <td>[<a href="./bookadd.php">新增資料</a>]</td> </tr>';
     
     foreach ($rows as $row) {
         echo "<tr>";
@@ -49,6 +53,14 @@ try {
         echo '<a href=./bookshow.php?key='.$row['id'].'>';
         echo "details";
         echo "</a> | ";
+
+
+        echo "<td>";
+        echo '<a href=./bookshow.php?key='.$row['id'].'>';
+        echo "edit";
+        echo "</a>  ";
+
+
         
         echo '<a href=./bookdelete.php?key='.$row['id'].' onClick="return confirm(\'確定要刪除此筆資料?\');">';
         echo "delete";
@@ -69,8 +81,9 @@ try {
 
 $conn = null;
 ?>
-    <p>[<a href="./bookadd.php">新增資料</a>]</p>
 
-</div>
+    </div>
+    <hr>
+    <p class="text-center">1111211031 黃修貞 &copy; 2024 DCAM</p>   
 </body>
 </html>

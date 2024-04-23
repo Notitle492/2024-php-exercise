@@ -40,13 +40,36 @@ try {
 
     // 取出資料集
     $row = $stmt->fetch();
+    ?>
 
-    echo $row['bookname'] ."<br>\n";
-    echo $row['author']   ."<br>\n";
-    echo $row['publisher']   ."<br>\n";
-    echo $row['pubdate']  ."<br>\n";
-    echo $row['price']    ."<br>\n";
-    echo nl2br($row['content']);
+    <table class="table">
+        <tr>
+            <th>書名</th>
+            <td><?= $row['bookname']?></td>
+        </tr>
+        <tr>
+            <th>作者</th>
+            <td><?= $row['author']?></td>
+        </tr>
+        <tr>
+            <th>出版社</th>
+            <td><?= $row['publisher']?></td>
+        </tr>
+        <tr>
+            <th>出版日期</th>
+            <td><?= $row['pubdate']?></td>
+        </tr>
+        <tr>
+            <th>定價</th>
+            <td><?= $row['price']?></td>
+        </tr>
+        <tr>
+            <th>內容簡介</th>
+            <td><?= $row['content']?></td>
+        </tr>
+
+    </table>
+<?php
     
     
 } catch(PDOException $e) {
@@ -63,5 +86,7 @@ $conn = null;
 ?>
         
     </div>
+    <hr>
+    <p class="text-center">1111211031 黃修貞 &copy; 2024 DCAM</p>
 </body>
 </html>
