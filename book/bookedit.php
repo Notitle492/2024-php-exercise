@@ -116,7 +116,7 @@ if(isset($_POST["submit"])){
     
             <div class="mb-3">
             <label for="bookname" class="form-label">書名：</label>
-            <input type="text" class="form-control" name="bookname" id="bookname" value="<? $row['bookname']?>" required>
+            <input type="text" class="form-control" name="bookname" id="bookname" value="<?= $row['bookname']?>" required>
             </div>
 
 
