@@ -41,6 +41,7 @@ try {
 
     echo $row['bookname'] ."<br>\n";
     echo $row['author']   ."<br>\n";
+    echo $row['publisher']   ."<br>\n";
     echo $row['pubdate']  ."<br>\n";
     echo $row['price']    ."<br>\n";
     echo nl2br($row['content']);
