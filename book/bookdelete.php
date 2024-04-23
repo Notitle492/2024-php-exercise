@@ -15,8 +15,9 @@
         $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
         $key = $_GET['key'];
+
         // 送出SQL語法給資料庫
-        $sql = "DELETE * FROM `book` WHERE `book`.`id` = ".$key;
+        $sql = "DELETE FROM `book` WHERE `book`.`id` = ".$key;
         $stmt = $conn->query($sql);
         
         
