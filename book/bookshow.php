@@ -65,7 +65,7 @@ try {
         </tr>
         <tr>
             <th>內容簡介</th>
-            <td><?= n12br($row['content'])?></td>
+            <td><?= nl2br($row['content'])?></td>
         </tr>
 
     </table>
