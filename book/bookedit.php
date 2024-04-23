@@ -139,7 +139,7 @@ if(isset($_POST["submit"])){
 
             <div class="mb-3">
             <label for="price" class="form-label">定價：</label>
-            <input type="number" class="form-control" name="price" id="price" value="請輸入定價" value="<?= $row['price'] ?>" required>
+            <input type="number" class="form-control" name="price" id="price" value="<?= $row['price'] ?>" required>
             </div>
 
 
